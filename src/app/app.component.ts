@@ -1,11 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {LoginComponent} from './login/login.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 declare const document: Document;
 @Component({
   selector: 'harbor-sso',
   standalone: true,
-  imports: [LoginComponent],
+  imports: [LoginComponent, MatToolbarModule],
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {

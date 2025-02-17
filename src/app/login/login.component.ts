@@ -4,6 +4,7 @@ import {FloatLabelType, MatFormFieldAppearance, MatFormFieldModule} from '@angul
 import {MatInputModule} from '@angular/material/input';
 import {ThemePalette} from '@angular/material/core';
 import {NgOptimizedImage} from '@angular/common';
+import {first} from 'rxjs';
 
 @Component({
   selector: 'harbor-sso-login',
@@ -13,11 +14,11 @@ import {NgOptimizedImage} from '@angular/common';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  readonly consumerUrlFc = new FormControl('');
-  readonly targetUrlFc = new FormControl('');
-  readonly emailFc = new FormControl('');
-  readonly firstNameFc = new FormControl('');
-  readonly lastNameFc = new FormControl('');
+  readonly consumerUrlFc = new FormControl('http://localhost:8080');
+  readonly targetUrlFc = new FormControl('http://localhost:62354');
+  readonly emailFc = new FormControl('benscodeworks@proton.me');
+  readonly firstNameFc = new FormControl('benjamin');
+  readonly lastNameFc = new FormControl('benson');
 
   readonly ssoForm: FormGroup = new FormGroup({
     consumerUrl: this.consumerUrlFc,
@@ -30,4 +31,5 @@ export class LoginComponent {
   readonly appearance: MatFormFieldAppearance = 'outline';
   readonly color: ThemePalette = 'primary';
   readonly floatLabel: FloatLabelType = 'always';
+  protected readonly first = first;
 }
