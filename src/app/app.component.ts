@@ -8,6 +8,7 @@ declare const document: Document;
   standalone: true,
   imports: [LoginComponent, MatToolbarModule],
   templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
   title = 'mock-harbor-sso';

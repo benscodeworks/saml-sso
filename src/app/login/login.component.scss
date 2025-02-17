@@ -3,22 +3,27 @@
   justify-content: space-around;
   height: 100%;
   align-items: center;
-  width: 625px;
+  width: 50em;
   border: solid var(--mat-sys-on-surface) 5px;
   border-radius: 10px;
+  margin-top: 1em;
 }
 
 img {
   margin-top: 5px;
   margin-left: 5px;
-  filter: grayscale(1);
-  border-radius: 5px
+  filter: grayscale(90%);
+  border-radius: 5px;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 20vw;
+  width: 25em;
   justify-content: center;
   align-items: center;
+}
+
+mat-form-field {
+  width: 20em;
 }
