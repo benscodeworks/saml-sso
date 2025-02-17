@@ -4,11 +4,14 @@ import {MatFormFieldAppearance, MatFormFieldModule} from '@angular/material/form
 import {MatInputModule} from '@angular/material/input';
 import {ThemePalette} from '@angular/material/core';
 import {NgOptimizedImage} from '@angular/common';
+import {SamlService} from '../services/saml.service';
+import {Saml} from '../models/saml';
+import {MatButtonModule} from '@angular/material/button';
 
 @Component({
   selector: 'harbor-sso-login',
   standalone: true,
-  imports: [MatFormFieldModule, ReactiveFormsModule, MatInputModule, NgOptimizedImage],
+  imports: [MatFormFieldModule, ReactiveFormsModule, MatInputModule, NgOptimizedImage, MatButtonModule],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
@@ -29,4 +32,12 @@ export class LoginComponent {
 
   readonly appearance: MatFormFieldAppearance = 'outline';
   readonly color: ThemePalette = 'primary';
+
+  constructor(private samlService: SamlService) {}
+
+  async onSubmit() {
+    console.log(this.ssoForm.value)
+    const request: Saml = this.ssoForm.value as Saml;
+    this.samlService.saml(request).subscribe(console.log);
+  }
 }

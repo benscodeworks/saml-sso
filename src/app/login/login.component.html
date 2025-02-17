@@ -1,6 +1,6 @@
 <div class="d-f">
   <img ngSrc="fake-hm.png" alt="img loading" height="380" width="380" style="margin-top: 5px;"/>
-  <form [formGroup]="ssoForm">
+  <form [formGroup]="ssoForm" (ngSubmit)="onSubmit()">
     <mat-form-field [appearance]="appearance" [color]="color" style="margin-top: 10px; ">
       <mat-label> ConsumerUrl
       </mat-label>
@@ -26,5 +26,6 @@
       </mat-label>
       <input matInput [formControl]="lastNameFc" required>
     </mat-form-field>
+      <button mat-mini-fab type="submit" [disabled]="!ssoForm.valid">Submit</button>
   </form>
 </div>

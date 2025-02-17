@@ -13,9 +13,11 @@ import {
   BrowserModule,
   DomRendererFactory2,
   EVENT_MANAGER_PLUGINS,
-  EventManagerPlugin,
+  EventManagerPlugin
+} from "./chunk-ZNZJ3U3L.js";
+import {
   HTTP_ROOT_INTERCEPTOR_FNS
-} from "./chunk-VDVBWJBU.js";
+} from "./chunk-2CQP5LD3.js";
 import {
   DOCUMENT,
   NullViewportScroller,
@@ -17133,4 +17135,4 @@ export {
    * License: MIT
    *)
 */
-//# sourceMappingURL=chunk-7BWLJDII.js.map
+//# sourceMappingURL=chunk-D5RYYXYW.js.map

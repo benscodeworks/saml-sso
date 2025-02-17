@@ -1,7 +1,8 @@
 import { createRequire } from 'module';const require = createRequire(import.meta.url);
 import {
   DomRendererFactory2
-} from "./chunk-VDVBWJBU.js";
+} from "./chunk-ZNZJ3U3L.js";
+import "./chunk-2CQP5LD3.js";
 import {
   DOCUMENT
 } from "./chunk-ZSCYCNUI.js";
