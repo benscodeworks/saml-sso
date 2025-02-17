@@ -1,6 +1,24 @@
 :host {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-self: center;
+  display: flex;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  width: 625px;
+  border: solid var(--mat-sys-on-surface) 5px;
+  border-radius: 10px;
+}
+
+img {
+  margin-top: 5px;
+  margin-left: 5px;
+  filter: grayscale(1);
+  border-radius: 5px
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
 }

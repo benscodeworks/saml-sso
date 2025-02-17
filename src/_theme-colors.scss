@@ -4,6 +4,8 @@
 @use 'sass:map';
 @use '@angular/material' as mat;
 
+// NOTE: generated using angular schematic for material design 3 colors.
+
 // Note: Color palettes are generated from primary: #006680, secondary: #44606f, tertiary: #784f8c, neutral: #787777
 $_palettes: (
   primary: (

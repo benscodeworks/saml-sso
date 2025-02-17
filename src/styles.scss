@@ -2,9 +2,10 @@
 @use 'theme-colors' as theme;
 
 html {
+  margin: 0;
+  color-scheme: dark light;
   @include mat.theme((color: (primary: theme.$primary-palette,
         tertiary: theme.$tertiary-palette,
-        theme-type: dark,
       ),
       typography: (plain-family: JetBrains Mono,
         bold-weight: 900,
@@ -12,4 +13,21 @@ html {
         regular-weight: 300,
       ),
       density: 0));
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body.dark-mode {
+  color-scheme: dark;
+}
+
+.d-f {
+  display: flex;
+}
+
+.j-c {
+  justify-content: center;
 }

@@ -1,14 +1,14 @@
-
-import { Component } from '@angular/core';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { FloatLabelType, MatFormFieldAppearance, MatFormFieldModule } from '@angular/material/form-field';
-import { MatInputModule } from '@angular/material/input';
-import { ThemePalette } from '@angular/material/core';
+import {Component} from '@angular/core';
+import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
+import {FloatLabelType, MatFormFieldAppearance, MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {ThemePalette} from '@angular/material/core';
+import {NgOptimizedImage} from '@angular/common';
 
 @Component({
   selector: 'harbor-sso-login',
   standalone: true,
-  imports: [MatFormFieldModule, ReactiveFormsModule, MatInputModule],
+  imports: [MatFormFieldModule, ReactiveFormsModule, MatInputModule, NgOptimizedImage],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })

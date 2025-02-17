@@ -1,27 +1,30 @@
-<form [formGroup]="ssoForm">
-    <mat-form-field [appearance]="appearance" [color]="color" [appearance]="appearance">
-        <mat-label> E-mail
-        </mat-label>
-        <input matInput [formControl]="emailFc" required>
+<div class="d-f">
+  <img ngSrc="fake-hm.png" alt="img loading" height="380" width="380" style="margin-top: 5px;"/>
+  <form [formGroup]="ssoForm">
+    <mat-form-field [appearance]="appearance" [color]="color" style="margin-top: 10px; ">
+      <mat-label> ConsumerUrl
+      </mat-label>
+      <input matInput [formControl]="emailFc" required>
     </mat-form-field>
-    <mat-form-field [appearance]="appearance" [color]="color" [appearance]="appearance">
-        <mat-label> E-mail
-        </mat-label>
-        <input matInput [formControl]="emailFc" required>
+    <mat-form-field [appearance]="appearance" [color]="color">
+      <mat-label> TargetUrl
+      </mat-label>
+      <input matInput [formControl]="emailFc" required>
     </mat-form-field>
-    <mat-form-field [appearance]="appearance" [color]="color" [appearance]="appearance">
-        <mat-label> E-mail
-        </mat-label>
-        <input matInput [formControl]="emailFc" required>
+    <mat-form-field [appearance]="appearance" [color]="color">
+      <mat-label> Email
+      </mat-label>
+      <input matInput [formControl]="emailFc" required>
     </mat-form-field>
-    <mat-form-field [appearance]="appearance" [color]="color" [appearance]="appearance">
-        <mat-label> E-mail
-        </mat-label>
-        <input matInput [formControl]="emailFc" required>
+    <mat-form-field [appearance]="appearance" [color]="color">
+      <mat-label> FirstName
+      </mat-label>
+      <input matInput [formControl]="emailFc" required>
     </mat-form-field>
-    <mat-form-field [appearance]="appearance" [color]="color" [appearance]="appearance">
-        <mat-label> E-mail
-        </mat-label>
-        <input matInput [formControl]="emailFc" required>
+    <mat-form-field [appearance]="appearance" [color]="color">
+      <mat-label> LastName
+      </mat-label>
+      <input matInput [formControl]="emailFc" required>
     </mat-form-field>
-</form>
+  </form>
+</div>

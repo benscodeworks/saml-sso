@@ -10,5 +10,4 @@ const serverConfig: ApplicationConfig = {
     provideServerRouting(serverRoutes)
   ]
 };
-
 export const config = mergeApplicationConfig(appConfig, serverConfig);
