@@ -2,7 +2,7 @@ import { createRequire } from 'module';const require = createRequire(import.meta
 import {
   AutofillMonitor,
   TextFieldModule
-} from "./chunk-NETUJMXP.js";
+} from "./chunk-UIAO6DBR.js";
 import {
   MAT_FORM_FIELD,
   MatError,
@@ -13,27 +13,27 @@ import {
   MatLabel,
   MatPrefix,
   MatSuffix
-} from "./chunk-AADACETN.js";
+} from "./chunk-L73BYGVI.js";
+import "./chunk-IIR4IZJS.js";
 import {
   ErrorStateMatcher,
   MatCommonModule,
   _ErrorStateTracker,
   _IdGenerator
-} from "./chunk-TF344PJA.js";
-import "./chunk-TQWHD636.js";
-import "./chunk-D4BOYDKM.js";
+} from "./chunk-AQUHYHXR.js";
 import {
   Platform,
   coerceBooleanProperty,
   getSupportedInputTypes
-} from "./chunk-NUAT4YMY.js";
+} from "./chunk-ZWNFCZWJ.js";
+import "./chunk-2LRID2IF.js";
 import {
   FormGroupDirective,
   NgControl,
   NgForm,
   Validators
-} from "./chunk-NFITK6BQ.js";
-import "./chunk-7KCBGUVE.js";
+} from "./chunk-2GWBHVX6.js";
+import "./chunk-ZSCYCNUI.js";
 import {
   Directive,
   ElementRef,
@@ -46,6 +46,7 @@ import {
   effect,
   inject,
   isSignal,
+  require_cjs,
   setClassMetadata,
   ɵɵInputTransformsFeature,
   ɵɵNgOnChangesFeature,
@@ -57,10 +58,7 @@ import {
   ɵɵdefineNgModule,
   ɵɵhostProperty,
   ɵɵlistener
-} from "./chunk-AXF5VKNL.js";
-import {
-  require_cjs
-} from "./chunk-T4XHMJL2.js";
+} from "./chunk-GJQPQF2B.js";
 import {
   __toESM
 } from "./chunk-YHCV7DAQ.js";

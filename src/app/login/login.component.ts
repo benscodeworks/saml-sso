@@ -1,10 +1,9 @@
 import {Component} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule} from '@angular/forms';
-import {FloatLabelType, MatFormFieldAppearance, MatFormFieldModule} from '@angular/material/form-field';
+import {MatFormFieldAppearance, MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {ThemePalette} from '@angular/material/core';
 import {NgOptimizedImage} from '@angular/common';
-import {first} from 'rxjs';
 
 @Component({
   selector: 'harbor-sso-login',
@@ -30,6 +29,4 @@ export class LoginComponent {
 
   readonly appearance: MatFormFieldAppearance = 'outline';
   readonly color: ThemePalette = 'primary';
-  readonly floatLabel: FloatLabelType = 'always';
-  protected readonly first = first;
 }

@@ -1,4 +1,7 @@
-<mat-toolbar>
+<mat-toolbar style="justify-content: space-between">
   <span>SAML SSO</span>
+  <div>
+    Dark Mode &nbsp;<mat-slide-toggle [(ngModel)]="isChecked" (mouseup)="toggleDarkMode($event)"></mat-slide-toggle>
+  </div>
 </mat-toolbar>
 <harbor-sso-login></harbor-sso-login>
